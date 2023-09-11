@@ -1,0 +1,51 @@
+table {
+    min-width: 100vw;
+    width: auto;
+    flex: 1;
+    display: grid;
+    border-collapse: collapse;
+    grid-template-columns:
+    minmax(30px, 1fr)
+    minmax(30px, 1fr)
+    minmax(30px, 1fr)
+    minmax(30px, 1fr)
+    minmax(30px, 1fr)
+    minmax(30px, 1fr)
+    minmax(30px, 1fr)
+    minmax(30px, 1fr);
+}
+
+thead,
+tbody,
+tr {
+    display: contents;
+}
+
+th,
+td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+th {
+    top: 0;
+    background: #2b2b3a;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: #786144;
+    position: relative;
+}
+
+
+td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #C7A29D;
+}
+
+tr:nth-child(even) td {
+    background: #2b2b3a;
+}
